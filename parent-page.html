@@ -6,12 +6,10 @@
     </head>
     <body>
 
-<iframe width="100%" height="300" src="//jsfiddle.net/2wdeubsj/9/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="300" src="/target-page.html" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 <script>
-  document.getElementById('incr').onclick = function() {
-    document.getElementById('count').innerHTML = parseInt(document.getElementById('count').innerHTML, 10) + 1;
-  }
+  window.frames[0].frameElement.contentWindow.func();
 </script>
 
     </body>
