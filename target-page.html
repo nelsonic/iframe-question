@@ -1,0 +1,24 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>iFrame Execution Test</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/united/bootstrap.min.css">
+    </head>
+    <body>
+
+      <div id="count">0</div>
+      <button id="incr">Increase Count</button>
+
+<script>
+  document.getElementById('incr').onclick = function() {
+    document.getElementById('count').innerHTML = parseInt(document.getElementById('count').innerHTML, 10) + 1;
+  }
+
+  // sample function to be called in parent.
+  function func(){
+       document.getElementById('count').innerHTML = "FUNC CALLED!";
+  }
+</script>
+
+    </body>
+</html>

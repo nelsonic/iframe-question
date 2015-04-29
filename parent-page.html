@@ -1,0 +1,18 @@
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>iFrame Execution Test | PARENT</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.2.0/united/bootstrap.min.css">
+    </head>
+    <body>
+
+<iframe width="100%" height="300" src="//jsfiddle.net/2wdeubsj/9/embedded/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
+<script>
+  document.getElementById('incr').onclick = function() {
+    document.getElementById('count').innerHTML = parseInt(document.getElementById('count').innerHTML, 10) + 1;
+  }
+</script>
+
+    </body>
+</html>
